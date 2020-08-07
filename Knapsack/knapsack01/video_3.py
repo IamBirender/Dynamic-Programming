@@ -21,8 +21,8 @@ class video_3(object):
         
         
 
-weight = [1,3,4,5,12,3,34,4,5]
-value = [1,4,5,7,2,3,45,12,12]
+weight = [1,3,4,5]
+value = [1,4,5,7]
 capacity = 7
 
 obj = video_3(weight, value, capacity)
