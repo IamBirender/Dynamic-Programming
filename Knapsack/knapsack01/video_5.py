@@ -18,10 +18,10 @@ class video_5(object):
                     self.dp[i][j] = 0
                 elif j == 0:
                     self.dp[i][j] = 0
-                elif self.weight[i-1] < j: 
-                    self.dp[i][j] = max(self.value[i-1] + self.dp[i][j-self.weight[i-1]], self.dp[i][j-1])
+                elif self.weight[i-1] <= j: 
+                    self.dp[i][j] = max(self.value[i-1] + self.dp[i][j-self.weight[i-1]], self.dp[i-1][j])
                 else:
-                    self.dp[i][j] = self.dp[i][j-1]
+                    self.dp[i][j] = self.dp[i-1][j]
 
 weight = [1,3,4,5]
 value = [1,4,5,7]

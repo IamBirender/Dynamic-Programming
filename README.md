@@ -4,3 +4,6 @@
 
 # Tutorial 2
 ![0/1 knapsack problem](pictures/0-1knapsack.png?raw=true "0/1 knapsack Types")
+
+# Tutorial 3
+![0/1 knapsack problem](pictures/video6.jpeg?raw=true "0/1 knapsack Types")
