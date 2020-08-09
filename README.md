@@ -7,3 +7,6 @@
 
 # Tutorial 3
 ![0/1 knapsack problem](pictures/video6.jpeg?raw=true "0/1 knapsack Types")
+
+# Tutorial 13
+![Types of Knapsack](pictures/lecture13.jpeg?raw=true "knapsack Types")
