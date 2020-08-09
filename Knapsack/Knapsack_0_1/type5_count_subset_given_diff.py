@@ -1,17 +1,20 @@
 class Solution(object):
-    def __init__(self, array):
+    def __init__(self, array, diff):
         self.array = array
         self.N = len(array)
         self.arr_total = sum(array)
-        self.min_diff = float("inf")
+        self.counter = 0
+        self.given_diff = diff
 
-    def min_diff_subsets(self):
+    def count_diff_subsets(self):
         self._hypothesis(self.array, self.N, 0)
-        print(self.min_diff)
+        print(self.counter)
     
     def _hypothesis(self, array, N, subset_sum):
         if N == 0:
-            self.min_diff = min(abs(2*subset_sum - self.arr_total), self.min_diff)
+            delta = abs(2*subset_sum - self.arr_total)
+            if delta == self.given_diff:
+                self.counter +=1
             return
 
         self._hypothesis(array[:-1], N-1, subset_sum + array[-1]) 
@@ -20,7 +23,8 @@ class Solution(object):
 
 
 array = [1,6,11,5]
-solution = Solution(array)
-solution.min_diff_subsets()  
+diff = 1
+solution = Solution(array, diff)
+solution.count_diff_subsets()  
 
 
