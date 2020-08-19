@@ -10,3 +10,6 @@
 
 # Tutorial 13
 ![Types of Knapsack](pictures/lecture13.jpeg?raw=true "knapsack Types")
+
+# Tutorial 33
+![Types of Knapsack](pictures/MCM.png?raw=true "knapsack Types")
